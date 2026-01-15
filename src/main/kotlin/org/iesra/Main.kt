@@ -20,5 +20,16 @@ fun main(){
     vehiculo.registrarViaje(100.0)
     println(vehiculo.detalles())
 
+    /* EJERCICIO 3 */
 
+    val libro1 = Libro("Libro 1","Joe Flows",150,true)
+    val libro2 = Libro("Libro 2","David Flores",236,false)
+    println(libro1)
+    println(libro2)
+    try{
+        val libro3 = Libro("","María Olivares",260,false)
+    }
+    catch (e : IllegalArgumentException){
+        println("El título o el autor del libro no pueden estar vacíos.")
+    }
 }
