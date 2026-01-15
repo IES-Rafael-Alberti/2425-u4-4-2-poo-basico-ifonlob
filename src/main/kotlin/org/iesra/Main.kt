@@ -32,4 +32,29 @@ fun main(){
     catch (e : IllegalArgumentException){
         println("El título o el autor del libro no pueden estar vacíos.")
     }
+
+    /* EJERCICIO 4 */
+
+    val estudiante1 = Estudiante("Ana")
+    val estudiante2 = Estudiante("Luis")
+    val estudiante3 = Estudiante("María")
+
+    estudiante1.setNota(8.5)
+    estudiante2.setNota(6.0)
+
+    try {
+        estudiante3.setNota(11.0)
+    } catch (e: IllegalArgumentException) {
+        println("La nota debe estar entre 0 y 10.")
+    }
+
+    try {
+        estudiante2.setNota(-1.0)
+    } catch (e: IllegalArgumentException) {
+        println("La nota debe estar entre 0 y 10.")
+    }
+
+    println(estudiante1)
+    println(estudiante2)
+    println(estudiante3)
 }
