@@ -57,4 +57,26 @@ fun main(){
     println(estudiante1)
     println(estudiante2)
     println(estudiante3)
+
+    /* EJERCICIO 5 */
+
+    val producto1 = Producto("Teclado", 29.99, 10)
+    val producto2 = Producto("Ratón", 59.99, 5)
+
+    println(producto1)
+    println(producto2)
+
+    producto1.vender(3)
+    producto2.vender(2)
+
+    producto2.reabastecer(10)
+
+    try {
+        producto1.vender(100)
+    } catch (e: IllegalArgumentException) {
+        throw IllegalArgumentException("La cantidad que se quiere vender tiene que ser menor que el stock disponible.")
+    }
+
+    println(producto1)
+    println(producto2)
 }
