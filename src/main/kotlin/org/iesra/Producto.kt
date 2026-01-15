@@ -17,11 +17,11 @@ class Producto(private val nombre : String, private val precio : Double, private
     fun vender(cantidad: Int) {
         if (cantidad <= 0) {
             throw IllegalArgumentException("La cantidad a vender debe ser mayor que 0.")
-            if (cantidad > stock) {
-                throw IllegalArgumentException("La cantidad que se quiere vender tiene que ser menor que el stock disponible. Stock disponible : ${this.stock}")
-            }
-            this.stock -= cantidad
         }
+        if (cantidad > stock) {
+            throw IllegalArgumentException("La cantidad que se quiere vender tiene que ser menor que el stock disponible. Stock disponible : ${this.stock}")
+        }
+        this.stock -= cantidad
     }
     fun reabastecer(cantidad: Int) {
         if (cantidad <= 0) {
