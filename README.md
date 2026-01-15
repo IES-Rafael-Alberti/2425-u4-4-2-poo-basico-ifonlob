@@ -169,16 +169,8 @@ println(producto2)
 - Se han probado manualmente las rutas principales de cada clase desde `main`, incluyendo:
     - Casos válidos (operaciones normales).
     - Casos inválidos que disparan `IllegalArgumentException` (saldo insuficiente, notas fuera de rango, stock insuficiente, etc.).
-- No se han detectado errores de ejecución tras corregir la lógica de `Producto.vender`. [web:8]
-
-
-## Documentación Adicional
-
-- **Manual de Usuario:** No aplica en esta práctica, ya que es una aplicación de consola orientada a pruebas de POO.
-- **Autorización de Permisos:** El profesor tiene permisos de lectura en el repositorio de GitHub (invitar como colaborador o usar Classroom).
-
 
 ## Conclusiones
 
-En esta práctica se ha trabajado con clases simples en Kotlin para afianzar los fundamentos de **POO**: creación de objetos, encapsulación de datos y validación de entradas.
-Se ha visto la importancia de manejar errores con excepciones y de diseñar métodos que mantengan el estado coherente de los objetos (por ejemplo, controlando el saldo o el stock).
+En esta práctica he trabajado con clases simples en Kotlin con el objetivo de afianzar los fundamentos de POO: creación de objetos, encapsulación de datos y validación de entradas.
+Asimismo, he visto la importancia de manejar errores con excepciones y de diseñar métodos que mantengan la coherencia de los objetos (por ejemplo, controlando el saldo o el stock).
