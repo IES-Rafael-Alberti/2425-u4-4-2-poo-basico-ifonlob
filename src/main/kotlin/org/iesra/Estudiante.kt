@@ -6,6 +6,7 @@ class Estudiante(private val nombre : String){
             if(value > 0.0 && value < 10.0){
                 throw IllegalArgumentException("La nota debe estar entre 0 y 10.")
             }
+            field = value
         }
 
 
