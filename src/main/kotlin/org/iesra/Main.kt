@@ -39,18 +39,20 @@ fun main(){
     val estudiante2 = Estudiante("Luis")
     val estudiante3 = Estudiante("María")
 
-    estudiante1.setNota(8.5)
-    estudiante2.setNota(6.0)
+    estudiante1.nota = 8.5
+    estudiante2.nota = 6.0
 
     try {
-        estudiante3.setNota(11.0)
-    } catch (e: IllegalArgumentException) {
+        estudiante3.nota = 11.0
+    }
+    catch (e: IllegalArgumentException) {
         println("La nota debe estar entre 0 y 10.")
     }
 
     try {
-        estudiante2.setNota(-1.0)
-    } catch (e: IllegalArgumentException) {
+        estudiante2.nota = -1.0
+    }
+    catch (e: IllegalArgumentException) {
         println("La nota debe estar entre 0 y 10.")
     }
 
@@ -74,7 +76,7 @@ fun main(){
     try {
         producto1.vender(100)
     } catch (e: IllegalArgumentException) {
-        throw IllegalArgumentException("La cantidad que se quiere vender tiene que ser menor que el stock disponible.")
+        println("La cantidad que se quiere vender tiene que ser menor que el stock disponible.")
     }
 
     println(producto1)
